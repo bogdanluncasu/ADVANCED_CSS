@@ -1,0 +1,141 @@
+body {
+    background-color:linear-gradient(gray,white);
+}
+
+.container {
+    width: 900px;
+    border: 1px solid gray;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(gray,darkgrey,white);
+}
+
+section,
+aside {
+    border: 1px solid gray;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+header {
+    width: 100%;
+    background-color: lightgray;
+}
+
+footer {
+    background-color: #838b8b;
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #efefef;
+    text-align: center;
+}
+
+aside {
+    background-color: #c1cdcd;
+}
+
+nav {
+    width: 100%;
+    background-color: #ccc;
+}
+
+nav ul{
+    display: flex;
+    padding:0;
+    justify-content: center;
+    justify-content: space-around;
+}
+nav ul li {
+    display: inline;
+    padding: 1% 2%;
+    font-size: 1.2em;
+}
+
+nav ul li a,header {
+    text-decoration: none;
+    font-family: 'Russo One', sans-serif;
+    color:#545454;
+}
+
+nav ul li:hover{
+    background-color:white;
+}
+
+h1,h2 {
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    color:rgba(0,0,0,0.6);
+}
+
+nav ul li a:hover {
+    color:gray;
+}
+
+.allContent {
+    width: 60%;
+    margin-right: 2%;
+    float: right;
+
+}
+
+p{
+    font-family: 'Great Vibes', cursive;
+}
+
+p:first-letter{
+    font-weight: bold;
+}
+
+.allContent article p:nth-child(even){
+    column-count: 2;
+    margin: 1% 2%;
+}
+
+.allContent article p:nth-child(odd){
+    margin: 1% 2%;
+}
+.allContent article header{
+    padding: 1.5% 0%;
+    text-align: center;
+}
+
+.secondMenu {
+    width: 30%;
+    margin-left: 2%;
+    float: left; 
+}
+
+.secondMenu nav ul li{
+    justify-content: center;
+    font-size: 1em;
+}
+
+.secondMenu aside p{
+    margin: 1% 2%;
+}
+
+body footer .avatar{
+    width: 5vw;
+    height: 5vw;
+    position: fixed;
+    border: .1vw solid gray;
+    border-radius: 50% 50%;
+    bottom: 1%; 
+    background-size: cover;
+    right:1%;
+    animation: rotateAvatar 4s infinite;
+    background-image: url("http://divinitycomputing.com/wp-content/uploads/2015/12/css.png");
+}
+
+@keyframes rotateAvatar{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
